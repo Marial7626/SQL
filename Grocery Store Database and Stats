@@ -1,0 +1,21 @@
+CREATE TABLE grocery_store (id INTEGER PRIMARY KEY, aisle INTEGER, name TEXT, quantity INTEGER, price INTEGER, type TEXT);
+INSERT into grocery_store VALUES (1, 1, "red apple", 20, .59, "fruit");
+INSERT into grocery_store VALUES (2, 1, "yellow apple", 0, .65, "fruit");
+INSERT into grocery_store VALUES (3, 5, "celery", 22, 1.99, "vegetable");
+INSERT into grocery_store VALUES (4, 22, "ice cream", 52, 5.00, "dairy");
+INSERT into grocery_store VALUES (5, 3, "carrots", 32, .99, "vegetable");
+INSERT into grocery_store VALUES (6, 12, "cookies", 24, 2.50, "snack");
+INSERT into grocery_store VALUES (7, 4, "goldfish", 29, 3.50, "snack");
+INSERT into grocery_store VALUES (8, 6, "water", 57, 2.25, "beverage");
+INSERT into grocery_store VALUES (9, 20, "sour patch kids", 14, 1.97, "candy");
+INSERT into grocery_store VALUES (10, 7, "apple juice",22, 2.50, "juice");
+INSERT into grocery_store VALUES (11, 9, "eggs", 89, .99, "poultry");
+INSERT into grocery_store VALUES (12, 8, "cheese", 16, 3.30, "dairy");
+INSERT into grocery_store VALUES (13, 13, "bread", 79, 2.46, "bakery");
+INSERT into grocery_store VALUES (14, 11, "donut", 0, .59, "bakery");
+INSERT into grocery_store VALUES (15, 10, "hershey's bar", 11, 1.50, "candy");
+
+SELECT * FROM grocery_store order by "price";
+SELECT * FROM grocery_store WHERE quantity >0;
+
+SELECT SUM(quantity) FROM grocery_store
